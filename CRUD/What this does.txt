@@ -1,0 +1,4 @@
+Make an app that:
+- allows for the creation of new users on one page
+- populates another page with a list of the users
+- provide links to index, admin, create new user, and display users using relative URLs and template inheritance

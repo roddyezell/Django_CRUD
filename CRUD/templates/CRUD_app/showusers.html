@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "CRUD_app/base.html" %}
+    {% block body_block %}
+
+    <h3>Here are the users:</h3>
+
+    {% if users %}
+
+    <ol>
+        {% for person in users %}
+        <li>User: {{ person.username }}</li>
+        <ul>
+            <li>Email: {{person.email}}</li>
+            <li>Password: {{person.password}}</li>
+        </ul>
+        {% endfor %}
+    </ol>
+    {% endif %}
+    
+    {% endblock %}
+
+    
